@@ -138,7 +138,15 @@ This demo shows:
 
 ## Deployment
 
-Vercel is configured in `vercel.json` to rewrite incoming routes to the `frontend/` directory, so the static dashboard can be served directly.
+Vercel can be configured in either of these ways:
+
+1. Project root set to the repository root.
+   In this case, the root `vercel.json` rewrites incoming routes to the `frontend/` directory so the static dashboard can be served directly.
+
+2. Project root set to `frontend`.
+   In this case, Vercel should use `frontend/vercel.json`, and no extra rewrites are needed because `index.html` is already at that deployment root.
+
+If you see Vercel's `404: NOT_FOUND` page, verify that the Vercel project's **Root Directory** matches the config being used. A common failure mode is keeping the project root set to `frontend` while Vercel is still reading rewrite targets intended for the repository root.
 
 ## Dependencies
 
