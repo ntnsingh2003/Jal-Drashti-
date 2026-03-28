@@ -84,12 +84,12 @@ JALDHRISHTI_V.2-master/
 |           `-- graphs/
 |-- backend/
 |   |-- app.py
+|   |-- requirements.txt
 |   `-- services/
 |       |-- rescue_path_finder.py
 |       `-- resource_allocator.py
 |-- docs/
 |   `-- system-technical-documentation.md
-|-- requirements.txt
 |-- vercel.json
 `-- .env.local
 ```
@@ -145,7 +145,7 @@ Vercel is configured in `vercel.json` to rewrite incoming routes to the `fronten
 Install Python dependencies with:
 
 ```bash
-pip install -r requirements.txt
+pip install -r backend/requirements.txt
 ```
 
 ## Current Scope And Limitations
@@ -160,5 +160,6 @@ pip install -r requirements.txt
 - `.env.local` is available for local environment settings.
 - Python may generate `__pycache__` directories after execution.
 - The frontend, backend, and docs are now separated by responsibility for easier maintenance.
+- `backend/requirements.txt` is kept inside the backend folder so Vercel can treat the repository root as a static frontend deployment.
 "# Jal-Drashti-" 
 "# Jal-Drashti-" 

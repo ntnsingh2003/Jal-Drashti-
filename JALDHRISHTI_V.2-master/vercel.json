@@ -3,6 +3,9 @@
     "name": "jal-drishti-mission-control",
     "cleanUrls": true,
     "trailingSlash": false,
+    "github": {
+        "silent": true
+    },
     "rewrites": [
         {
             "source": "/(.*)",
