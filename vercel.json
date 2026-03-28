@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "name": "jal-drishti-mission-control",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "github": {
+    "silent": true
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/JALDHRISHTI_V.2-master/frontend/index.html"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "/JALDHRISHTI_V.2-master/frontend/assets/$1"
+    },
+    {
+      "source": "/pages/(.*)",
+      "destination": "/JALDHRISHTI_V.2-master/frontend/pages/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/JALDHRISHTI_V.2-master/frontend/$1"
+    }
+  ]
+}
