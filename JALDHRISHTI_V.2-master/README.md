@@ -105,6 +105,7 @@ JALDHRISHTI_V.2-master/
 - `backend/services/rescue_path_finder.py`: route estimation service
 - `backend/services/resource_allocator.py`: resource planning service
 - `docs/system-technical-documentation.md`: additional technical reference
+- `docs/map-integration-readme.md`: focused explanation of how the map is integrated into the project
 
 ## Local Development
 
